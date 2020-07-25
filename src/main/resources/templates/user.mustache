@@ -1,0 +1,17 @@
+{{> header}}
+
+<div class="info">
+  <h1>{{name}}'s Camping Log</h1>
+  <h3>@{{user.tag}}</h3>
+</div>
+
+<div class="campouts">
+  {{#campouts}}
+    <div>
+      <h2>{{name}}</h2>
+      <p><span class="duration">{{duration}}</span> • <span class="daterange">{{startDate}} - {{endDate}}</span></p>
+    </div>
+  {{/campouts}}
+</div>
+
+{{> footer}}
